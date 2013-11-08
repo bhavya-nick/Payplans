@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="payplans" method="upgrade">
+    <name>PayPlans-Restrict</name>
+    <version>3.0.1</version>
+    <creationDate>Jan 2010</creationDate>
+    <author>Team JoomlaXi</author>
+    <authorEmail>bhavya@readybytes.in</authorEmail>
+    <authorUrl>http://www.joomlaxi.com</authorUrl>
+    <copyright>2009-11 Ready Bytes Software Labs Pvt. Ltd.</copyright>
+    <license>GNU General Public License v2</license>
+    <description>PayPlans : Paid Membership and Subscription System for Joomla</description>
+	<files>
+		<filename plugin="restrict">restrict.php</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.plg_payplans_restrict.ini</language>
+	</languages>
+	<config>
+		<fields addpath="/components/com_payplans/elements" name="params">
+			<fieldset name="basic">
+			<field 	name="plan"	label="COM_PAYPLANS_RESTRICT_PLAN"
+				description="COM_PAYPLANS_RESTRICT_PLAN_DESC" type="plans"
+				default="0" size="40" multiple="true"
+				/>	
+				
+			<field 	name="option"	label="COM_PAYPLANS_RESTRICT_OPTION"
+				description="COM_PAYPLANS_RESTRICT_OPTION_DESC" type="text"
+				default="" size="15" class="required"
+				/>
+			<field 	name="view"	label="COM_PAYPLANS_RESTRICT_VIEW"
+				description="COM_PAYPLANS_RESTRICT_VIEW_DESC" type="text"
+				default="" size="15"
+				/>
+			<field 	name="task"	label="COM_PAYPLANS_RESTRICT_TASK"
+				description="COM_PAYPLANS_RESTRICT_TASK_DESC" type="text"
+				default="" size="15"
+				/>
+			<field 	name="redirect_url"	label="COM_PAYPLANS_RESTRICT_REDIRECT_URL"
+				description="COM_PAYPLANS_RESTRICT_REDIRECT_URL_DESC" type="text"
+				default="" size="30"
+				/>	
+			
+			</fieldset>
+		</fields>
+	</config>
+</extension>
